@@ -1,0 +1,6 @@
+framework module fbCharm {
+  umbrella header "fbCharm-umbrella.h"
+
+  export *
+  module * { export * }
+}

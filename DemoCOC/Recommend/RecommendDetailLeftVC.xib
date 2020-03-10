@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecommendDetailLeftVC" customModule="COC" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="iAb-sc-xoY" id="gqs-3a-8FO"/>
+                <outlet property="gradientView" destination="OK6-be-PTB" id="smw-rq-Fuj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OK6-be-PTB">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" red="0.49019607843137253" green="0.85490196078431369" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="iAb-sc-xoY">
+                    <rect key="frame" x="0.0" y="80" width="414" height="566"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="s1t-js-qBZ">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Wje-mK-epJ"/>
+                        <outlet property="delegate" destination="-1" id="6oT-Yv-rsV"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="OK6-be-PTB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="116-9D-r6k"/>
+                <constraint firstItem="iAb-sc-xoY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="AFr-eL-Act"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OK6-be-PTB" secondAttribute="trailing" id="Bo8-tl-3O0"/>
+                <constraint firstItem="iAb-sc-xoY" firstAttribute="width" secondItem="OK6-be-PTB" secondAttribute="width" id="I8Z-ng-kcU"/>
+                <constraint firstItem="OK6-be-PTB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ok7-dM-L6W"/>
+                <constraint firstItem="iAb-sc-xoY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="VE5-qf-hb7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="OK6-be-PTB" secondAttribute="bottom" id="ZXZ-6r-DGS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="iAb-sc-xoY" secondAttribute="bottom" constant="90" id="bb2-GH-fSb"/>
+                <constraint firstItem="iAb-sc-xoY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="t09-Vc-Vd1"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="198.55072463768118" y="201.35869565217394"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansTC-Medium.otf">
+            <string>NotoSansTC-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebVC" customModule="COC" customModuleProvider="target">
+            <connections>
+                <outlet property="closeBtn" destination="1LJ-7E-wj6" id="g8p-Qy-jBJ"/>
+                <outlet property="shadowView" destination="lX5-Cw-QfJ" id="Dph-8m-kgw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="YLh-WC-adB" id="pyC-E6-cYB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLh-WC-adB">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lX5-Cw-QfJ">
+                    <rect key="frame" x="354" y="676" width="40" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LJ-7E-wj6" customClass="MyButton" customModule="COC" customModuleProvider="target">
+                    <rect key="frame" x="354" y="676" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.79607843140000001" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="LXf-SS-VI1"/>
+                        <constraint firstAttribute="height" constant="40" id="uhr-yv-pld"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NotoSansTC-Medium" family="Noto Sans TC" pointSize="12"/>
+                    <state key="normal" title="離開">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onCloseBtnClick:" destination="-1" eventType="touchUpInside" id="hRZ-wW-cxY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lX5-Cw-QfJ" firstAttribute="centerX" secondItem="1LJ-7E-wj6" secondAttribute="centerX" id="7zp-Of-bHN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1LJ-7E-wj6" secondAttribute="trailing" constant="20" id="Gi7-X0-y4H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YLh-WC-adB" secondAttribute="bottom" id="LvL-9c-Lh8"/>
+                <constraint firstItem="lX5-Cw-QfJ" firstAttribute="height" secondItem="1LJ-7E-wj6" secondAttribute="height" id="MaS-5t-VOV"/>
+                <constraint firstItem="YLh-WC-adB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="X3e-Z6-FBT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1LJ-7E-wj6" secondAttribute="bottom" constant="20" id="a7n-Ms-fJ2"/>
+                <constraint firstItem="lX5-Cw-QfJ" firstAttribute="centerY" secondItem="1LJ-7E-wj6" secondAttribute="centerY" id="bKK-zy-spD"/>
+                <constraint firstItem="YLh-WC-adB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fFo-Dm-vF2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YLh-WC-adB" secondAttribute="trailing" id="fbg-oS-37r"/>
+                <constraint firstItem="lX5-Cw-QfJ" firstAttribute="width" secondItem="1LJ-7E-wj6" secondAttribute="width" id="jFT-g4-JP2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.44565217391306"/>
+        </view>
+    </objects>
+</document>

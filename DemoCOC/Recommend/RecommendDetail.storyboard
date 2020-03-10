@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansTC-Bold.otf">
+            <string>NotoSansTC-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Recommend Detail MainVC-->
+        <scene sceneID="okm-qI-4Jj">
+            <objects>
+                <viewController storyboardIdentifier="RecommendPageVC" id="vSn-eK-6yj" customClass="RecommendDetailMainVC" customModule="COC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ueH-yF-EGj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgU-8Y-NSC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xX-Im-ULO">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                        <connections>
+                                            <segue destination="81c-wP-cGH" kind="embed" identifier="RecommendContainerViewSegue" id="gkj-ft-0vz"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.49019607843137253" green="0.85490196078431369" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6xX-Im-ULO" secondAttribute="trailing" id="Jqj-EJ-eto"/>
+                                    <constraint firstItem="6xX-Im-ULO" firstAttribute="top" secondItem="zgU-8Y-NSC" secondAttribute="top" id="M6G-i0-mQ1"/>
+                                    <constraint firstAttribute="bottom" secondItem="6xX-Im-ULO" secondAttribute="bottom" id="piX-Mn-cuX"/>
+                                    <constraint firstItem="6xX-Im-ULO" firstAttribute="leading" secondItem="zgU-8Y-NSC" secondAttribute="leading" id="uyU-yi-ZkE"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日資源推薦" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="aFC-gt-oPv">
+                                <rect key="frame" x="79" y="33" width="256" height="37"/>
+                                <fontDescription key="fontDescription" name="NotoSansTC-Bold" family="Noto Sans TC" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDG-IO-9Ev">
+                                <rect key="frame" x="43.666666666666657" y="668" width="109" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bDG-IO-9Ev" secondAttribute="height" multiplier="109:35" id="4CU-1r-oV1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansTC-Bold" family="Noto Sans TC" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="推薦交流"/>
+                                <connections>
+                                    <action selector="onRecommendBtnClick:" destination="vSn-eK-6yj" eventType="touchUpInside" id="y7v-Kj-dEe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sg-b7-03h">
+                                <rect key="frame" x="152.66666666666666" y="668" width="108.99999999999997" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3sg-b7-03h" secondAttribute="height" multiplier="109:35" id="kmB-io-BbA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansTC-Bold" family="Noto Sans TC" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="提拔晚輩">
+                                    <color key="titleColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPromotedBtnClick:" destination="vSn-eK-6yj" eventType="touchUpInside" id="wli-Xb-oBT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFF-4t-Qg1">
+                                <rect key="frame" x="261.66666666666669" y="668" width="109" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eFF-4t-Qg1" secondAttribute="height" multiplier="109:35" id="50H-AZ-TBb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansTC-Bold" family="Noto Sans TC" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="聚會活動">
+                                    <color key="titleColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onActivityBtnClick:" destination="vSn-eK-6yj" eventType="touchUpInside" id="pSJ-c5-fB2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpN-VB-cAX" customClass="MyButton" customModule="COC" customModuleProvider="target">
+                                <rect key="frame" x="369" y="39" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UpN-VB-cAX" secondAttribute="height" multiplier="1:1" id="hVu-Ku-s7z"/>
+                                </constraints>
+                                <state key="normal" image="closeBtn"/>
+                                <connections>
+                                    <action selector="onCloseBtnClick:" destination="vSn-eK-6yj" eventType="touchUpInside" id="TB8-9P-AWA"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAs-6E-n2y">
+                                <rect key="frame" x="80.666666666666671" y="703" width="35" height="5"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.79607843140000001" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xAs-6E-n2y" secondAttribute="height" multiplier="7:1" id="ggR-hP-oxo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3sg-b7-03h" firstAttribute="centerX" secondItem="ueH-yF-EGj" secondAttribute="centerX" id="1FR-IZ-QxY"/>
+                            <constraint firstItem="bDG-IO-9Ev" firstAttribute="width" secondItem="ueH-yF-EGj" secondAttribute="width" multiplier="0.263285" id="1cn-Ks-cI6"/>
+                            <constraint firstItem="xAs-6E-n2y" firstAttribute="width" secondItem="ueH-yF-EGj" secondAttribute="width" multiplier="0.0845411" id="25Q-7z-dom"/>
+                            <constraint firstItem="bDG-IO-9Ev" firstAttribute="centerX" secondItem="ueH-yF-EGj" secondAttribute="centerX" multiplier="98:207" id="2d2-50-x36"/>
+                            <constraint firstItem="zgU-8Y-NSC" firstAttribute="bottom" secondItem="eFc-ev-Iid" secondAttribute="bottom" id="74B-2N-1Rv"/>
+                            <constraint firstItem="UpN-VB-cAX" firstAttribute="trailing" secondItem="eFc-ev-Iid" secondAttribute="centerX" multiplier="394:207" id="7Ob-qq-cL2"/>
+                            <constraint firstItem="eFF-4t-Qg1" firstAttribute="bottom" secondItem="3sg-b7-03h" secondAttribute="bottom" id="7nv-Xr-jSO"/>
+                            <constraint firstItem="aFC-gt-oPv" firstAttribute="top" secondItem="ueH-yF-EGj" secondAttribute="top" constant="33" id="9HX-pL-sg3"/>
+                            <constraint firstItem="eFF-4t-Qg1" firstAttribute="width" secondItem="ueH-yF-EGj" secondAttribute="width" multiplier="0.263285" id="9ro-r4-UN6"/>
+                            <constraint firstItem="zgU-8Y-NSC" firstAttribute="trailing" secondItem="eFc-ev-Iid" secondAttribute="trailing" id="BIp-xt-b5B"/>
+                            <constraint firstItem="bDG-IO-9Ev" firstAttribute="bottom" secondItem="3sg-b7-03h" secondAttribute="bottom" id="BYf-H0-GHH"/>
+                            <constraint firstItem="3sg-b7-03h" firstAttribute="width" secondItem="ueH-yF-EGj" secondAttribute="width" multiplier="0.263285" id="Cuz-oB-Fgp"/>
+                            <constraint firstItem="zgU-8Y-NSC" firstAttribute="top" secondItem="ueH-yF-EGj" secondAttribute="top" id="IUd-JQ-ThC"/>
+                            <constraint firstItem="zgU-8Y-NSC" firstAttribute="leading" secondItem="eFc-ev-Iid" secondAttribute="leading" id="WRT-cp-6F4"/>
+                            <constraint firstItem="UpN-VB-cAX" firstAttribute="centerY" secondItem="aFC-gt-oPv" secondAttribute="centerY" id="bA2-7N-ID8"/>
+                            <constraint firstItem="xAs-6E-n2y" firstAttribute="centerX" secondItem="bDG-IO-9Ev" secondAttribute="centerX" id="byh-Ki-A3D"/>
+                            <constraint firstItem="eFc-ev-Iid" firstAttribute="bottom" secondItem="3sg-b7-03h" secondAttribute="bottom" constant="33" id="dYd-dB-RHQ"/>
+                            <constraint firstItem="xAs-6E-n2y" firstAttribute="top" secondItem="bDG-IO-9Ev" secondAttribute="bottom" id="fkn-SO-5vs"/>
+                            <constraint firstItem="UpN-VB-cAX" firstAttribute="width" secondItem="ueH-yF-EGj" secondAttribute="width" multiplier="0.0603865" id="gnc-fC-nK1"/>
+                            <constraint firstItem="aFC-gt-oPv" firstAttribute="width" secondItem="ueH-yF-EGj" secondAttribute="width" multiplier="0.618357" id="qLD-oJ-f6E"/>
+                            <constraint firstItem="eFF-4t-Qg1" firstAttribute="centerX" secondItem="ueH-yF-EGj" secondAttribute="centerX" multiplier="316:207" id="tyy-Zl-WYK"/>
+                            <constraint firstItem="aFC-gt-oPv" firstAttribute="centerX" secondItem="ueH-yF-EGj" secondAttribute="centerX" id="zNK-nc-sJn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eFc-ev-Iid"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityBtn" destination="eFF-4t-Qg1" id="zre-qf-QvJ"/>
+                        <outlet property="contView" destination="zgU-8Y-NSC" id="nun-bt-ukE"/>
+                        <outlet property="promotedBtn" destination="3sg-b7-03h" id="i79-hb-90z"/>
+                        <outlet property="recommendBtn" destination="bDG-IO-9Ev" id="zV5-os-8UO"/>
+                        <outlet property="separatorView" destination="xAs-6E-n2y" id="XQf-Fi-sJR"/>
+                        <outlet property="titleLabel" destination="aFC-gt-oPv" id="oqZ-9I-05p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JX6-d6-e7l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="427.536231884058" y="-219.29347826086959"/>
+        </scene>
+        <!--Recommend PageVC-->
+        <scene sceneID="kfj-zK-9cl">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="81c-wP-cGH" customClass="RecommendPageVC" customModule="COC" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nnr-K4-5Lh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1216" y="-219"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="closeBtn" width="25" height="25"/>
+    </resources>
+</document>

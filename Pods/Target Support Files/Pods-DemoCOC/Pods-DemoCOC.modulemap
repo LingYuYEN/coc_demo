@@ -1,0 +1,6 @@
+framework module Pods_DemoCOC {
+  umbrella header "Pods-DemoCOC-umbrella.h"
+
+  export *
+  module * { export * }
+}

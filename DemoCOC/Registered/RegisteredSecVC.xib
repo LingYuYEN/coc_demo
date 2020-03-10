@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansTC-Bold.otf">
+            <string>NotoSansTC-Bold</string>
+        </array>
+        <array key="NotoSansTC-Medium.otf">
+            <string>NotoSansTC-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisteredSecVC" customModule="COC" customModuleProvider="target">
+            <connections>
+                <outlet property="areaCodeTextField" destination="Ybd-f5-C2X" id="v0a-pB-vWZ"/>
+                <outlet property="closeBtn" destination="NIO-sm-0ec" id="qCx-5g-K3n"/>
+                <outlet property="errorLabel" destination="2I6-6J-M1O" id="69G-lv-oCI"/>
+                <outlet property="largeTitleLabel" destination="bE3-SU-uaj" id="C7U-5W-gNA"/>
+                <outlet property="loginBtn" destination="bGL-aD-A5E" id="YNF-U4-p9O"/>
+                <outlet property="memoLabel" destination="lQa-fr-D5u" id="BfK-6M-nqT"/>
+                <outlet property="nextStepBtn" destination="vfh-VT-elo" id="Ps0-91-Xg6"/>
+                <outlet property="noteTextView" destination="XQa-UO-82L" id="AAZ-3B-kBE"/>
+                <outlet property="phoneNumberTextField" destination="8oe-CQ-Zfl" id="uCB-Kz-3YK"/>
+                <outlet property="titleLabel" destination="LN8-bU-5ki" id="iiF-UD-l3g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="來交流做個好生意吧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bE3-SU-uaj">
+                    <rect key="frame" x="35" y="86.666666666666671" width="225" height="37"/>
+                    <fontDescription key="fontDescription" name="NotoSansTC-Bold" family="Noto Sans TC" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請輸入手機號碼註冊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LN8-bU-5ki">
+                    <rect key="frame" x="35" y="129.66666666666666" width="162.33333333333334" height="26.666666666666657"/>
+                    <fontDescription key="fontDescription" name="NotoSansTC-Medium" family="Noto Sans TC" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+ 886" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ybd-f5-C2X">
+                    <rect key="frame" x="20.000000000000007" y="238.99999999999997" width="121.66666666666669" height="51.666666666666657"/>
+                    <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="NotoSansTC-Medium" family="Noto Sans TC" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="912345678" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8oe-CQ-Zfl">
+                    <rect key="frame" x="159.66666666666663" y="238.99999999999997" width="235" height="51.666666666666657"/>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="NotoSansTC-Medium" family="Noto Sans TC" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="x55-Ua-x3T">
+                    <rect key="frame" x="117" y="341" width="180" height="38"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已擁有帳號  即可直接" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQa-fr-D5u">
+                            <rect key="frame" x="0.0" y="0.0" width="142" height="38"/>
+                            <fontDescription key="fontDescription" name="NotoSansTC-Medium" family="Noto Sans TC" pointSize="15"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGL-aD-A5E" customClass="MyButton" customModule="COC" customModuleProvider="target">
+                            <rect key="frame" x="146" y="0.0" width="34" height="38"/>
+                            <fontDescription key="fontDescription" name="NotoSansTC-Bold" family="Noto Sans TC" pointSize="17"/>
+                            <state key="normal" title="登入">
+                                <color key="titleColor" red="0.98823529409999999" green="0.84705882349999995" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onLoginBtnClick:" destination="-1" eventType="touchUpInside" id="UEq-aL-2SS"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfh-VT-elo">
+                    <rect key="frame" x="19.666666666666657" y="438" width="375" height="52"/>
+                    <color key="backgroundColor" red="0.054901960784313725" green="0.019607843137254902" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vfh-VT-elo" secondAttribute="height" multiplier="375:52" id="tGF-Ns-owA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NotoSansTC-Bold" family="Noto Sans TC" pointSize="15"/>
+                    <state key="normal" title="下一步"/>
+                    <connections>
+                        <action selector="onNextStepBtnClick:" destination="-1" eventType="touchUpInside" id="3JH-f3-Rrk"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="註冊完成即代表同意  康闓科技  服務條款  與  隱私權政策  。 " translatesAutoresizingMaskIntoConstraints="NO" id="XQa-UO-82L">
+                    <rect key="frame" x="38" y="692" width="356" height="32"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="NotoSansTC-Bold" family="Noto Sans TC" pointSize="10.699999809265137"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIO-sm-0ec" customClass="MyButton" customModule="COC" customModuleProvider="target">
+                    <rect key="frame" x="369" y="14" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="hlR-2j-HOT"/>
+                        <constraint firstAttribute="height" constant="25" id="jmm-v4-ZD9"/>
+                    </constraints>
+                    <state key="normal" image="closeBtn"/>
+                    <connections>
+                        <action selector="onCloseBtnClick:" destination="-1" eventType="touchUpInside" id="taJ-dB-3PH"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2I6-6J-M1O">
+                    <rect key="frame" x="187.33333333333334" y="577.66666666666663" width="39.666666666666657" height="22.333333333333371"/>
+                    <fontDescription key="fontDescription" name="NotoSansTC-Medium" family="Noto Sans TC" pointSize="15"/>
+                    <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ybd-f5-C2X" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="121.7: 414" id="1mH-o6-RWq"/>
+                <constraint firstItem="bE3-SU-uaj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="35:207" id="5oX-48-eHH"/>
+                <constraint firstItem="Ybd-f5-C2X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="20:207" id="7Xw-mX-Pog"/>
+                <constraint firstItem="vfh-VT-elo" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.905797" id="A9t-wu-0YO"/>
+                <constraint firstItem="2I6-6J-M1O" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.6" id="CpV-Xn-kwz"/>
+                <constraint firstItem="NIO-sm-0ec" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="14" id="Dog-ca-dJO"/>
+                <constraint firstItem="8oe-CQ-Zfl" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.567633" id="JZz-Aa-7W5"/>
+                <constraint firstItem="x55-Ua-x3T" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LXo-iS-eYr"/>
+                <constraint firstItem="vfh-VT-elo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="438:368" id="RoG-ZG-3wo"/>
+                <constraint firstItem="x55-Ua-x3T" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="360:368" id="SwB-l3-KbC"/>
+                <constraint firstItem="bE3-SU-uaj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="86.5:368" id="X0r-gc-SXF"/>
+                <constraint firstItem="LN8-bU-5ki" firstAttribute="leading" secondItem="bE3-SU-uaj" secondAttribute="leading" id="c3p-TS-7pT"/>
+                <constraint firstItem="vfh-VT-elo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eTo-52-DOx"/>
+                <constraint firstItem="LN8-bU-5ki" firstAttribute="top" secondItem="bE3-SU-uaj" secondAttribute="bottom" constant="6" id="eWF-vZ-u9e"/>
+                <constraint firstItem="8oe-CQ-Zfl" firstAttribute="centerY" secondItem="Ybd-f5-C2X" secondAttribute="centerY" id="fpd-mi-h4b"/>
+                <constraint firstItem="Ybd-f5-C2X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="239:368" id="jDg-0Q-y6Y"/>
+                <constraint firstItem="Ybd-f5-C2X" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="51.7:736" id="kjL-JC-WmL"/>
+                <constraint firstItem="2I6-6J-M1O" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="n85-tE-n2j"/>
+                <constraint firstItem="8oe-CQ-Zfl" firstAttribute="height" secondItem="Ybd-f5-C2X" secondAttribute="height" id="sVA-mJ-Wo6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="XQa-UO-82L" secondAttribute="bottom" constant="12" id="srz-fm-wej"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NIO-sm-0ec" secondAttribute="trailing" constant="20" id="uxI-sU-IbP"/>
+                <constraint firstItem="8oe-CQ-Zfl" firstAttribute="leading" secondItem="Ybd-f5-C2X" secondAttribute="trailing" constant="18" id="wdA-wR-KFI"/>
+                <constraint firstItem="XQa-UO-82L" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="38:207" id="zPQ-Yg-FvY"/>
+                <constraint firstItem="XQa-UO-82L" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.859903" id="zrA-FH-Hbi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.44565217391306"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeBtn" width="25" height="25"/>
+    </resources>
+</document>

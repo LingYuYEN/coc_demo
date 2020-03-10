@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="U6b-Vx-4bR" customClass="HomeCollectionReusableView" customModule="COC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJd-ds-zoD" customClass="ForHeaderCellView" customModule="COC" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="MJd-ds-zoD" secondAttribute="trailing" id="fYW-I4-ms2"/>
+                <constraint firstItem="MJd-ds-zoD" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="ffJ-uE-PDc"/>
+                <constraint firstItem="MJd-ds-zoD" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="ozL-b5-bUF"/>
+                <constraint firstAttribute="bottom" secondItem="MJd-ds-zoD" secondAttribute="bottom" id="tYZ-Ft-qeq"/>
+            </constraints>
+            <connections>
+                <outlet property="headerView" destination="MJd-ds-zoD" id="jOI-hf-ewq"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="90"/>
+        </collectionReusableView>
+    </objects>
+</document>

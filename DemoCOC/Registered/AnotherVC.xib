@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansTC-Bold.otf">
+            <string>NotoSansTC-Bold</string>
+        </array>
+        <array key="NotoSansTC-Medium.otf">
+            <string>NotoSansTC-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnotherVC" customModule="COC" customModuleProvider="target">
+            <connections>
+                <outlet property="textView" destination="Rvj-ed-P94" id="xpc-qg-xzS"/>
+                <outlet property="titleLabel" destination="Ccm-8r-Aga" id="bAj-vB-BEq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="隱私權政策" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccm-8r-Aga">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="YDf-5O-nVI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NotoSansTC-Bold" family="Noto Sans TC" pointSize="25"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgq-jQ-c3h" customClass="MyButton" customModule="COC" customModuleProvider="target">
+                    <rect key="frame" x="369" y="22.666666666666671" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fgq-jQ-c3h" secondAttribute="height" multiplier="1:1" id="mWT-xB-sg7"/>
+                        <constraint firstAttribute="width" constant="25" id="wRf-a1-9J8"/>
+                    </constraints>
+                    <state key="normal" image="closeBtn"/>
+                    <connections>
+                        <action selector="onCloseBtnClick:" destination="-1" eventType="touchUpInside" id="8wf-f9-kL4"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvj-ed-P94">
+                    <rect key="frame" x="20" y="70" width="374" height="666"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">歡迎您使用台灣坐標轉換工具（以下簡稱本App），為了讓您能夠安心的使用本App的各項服務與資訊，特此向您說明本App的隱私權保護政策，以保障您的權益，請您詳閱下列內容：\n\n一、隱私權保護政策的適用範圍\n\n隱私權保護政策內容，包括本App如何處理在您使用App服務時收集到的個人識別資料。隱私權保護政策不適用於本App以外的相關連結網站，也不適用於非本App所委託或參與管理的人員。\n\n二、個人資料的蒐集、處理及利用方式\n\n當您造訪本App或使用本App所提供之功能服務時，我們將視該服務功能性質，請您提供必要的個人資料，並在該特定目的範圍內處理及利用您的個人資料；非經您書面同意，本App不會將個人資料用於其他用途。於一般瀏覽時，系統會自行記錄相關行徑，包括您使用連線設備的IP位址、使用時間記錄等，做為我們增進網站服務的參考依據，此記錄為內部應用，決不對外公佈。為提供精確的服務，我們會將收集的問卷調查內容進行統計與分析，分析結果之統計數據或說明文字呈現，除供內部研究外，我們會視需要公佈統計數據及說明文字，但不涉及特定個人之資料。\n\n三、資料之保護\n\n本App主機均設有防火牆、防毒系統等相關的各項資訊安全設備及必要的安全防護措施，加以保護網站及您的個人資料採用嚴格的保護措施，只由經過授權的人員才能接觸您的個人資料，相關處理人員皆簽有保密合約，如有違反保密義務者，將會受到相關的法律處分。如因業務需要有必要委託其他單位提供服務時，本App亦會嚴格要求其遵守保密義務，並且採取必要檢查程序以確定其將確實遵守。\n\n四、網站對外的相關連結\n\n本App內提供其他網站的網路連結，您也可經由本App所提供的連結，點選進入其他網站。但該連結網站不適用本App的隱私權保護政策，您必須參考該連結網站中的隱私權保護政策。\n\n五、與第三人共用個人資料之政策\n\n本App絕不會提供、交換、出租或出售任何您的個人資料給其他個人、團體、私人企業或公務機關，但有法律依據或合約義務者，不在此限。前項但書之情形包括不限於：\n\n經由您書面同意。\n法律明文規定。\n為免除您生命、身體、自由或財產上之危險。\n與公務機關或學術研究機構合作，基於公共利益為統計或學術研究而有必要，且資料經過提供者處理或蒐集者依其揭露方式無從識別特定之當事人。/n當您在本App的行為，違反服務條款或可能損害或妨礙網站與其他使用者權益或導致任何人遭受損害時，經網站管理單位研析揭露您的個人資料是為了辨識、聯絡或採取法律行動所必要者。\n有利於您的權益。\n本App委託廠商協助蒐集、處理或利用您的個人資料時，將對委外廠商或個人善盡監督管理之責。\n\n六、隱私權保護政策之修正\n\n本App隱私權保護政策將因應需求隨時進行修正，修正後的條款將刊登於網站上。</string>
+                    <color key="textColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="NotoSansTC-Medium" family="Noto Sans TC" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Rvj-ed-P94" firstAttribute="top" secondItem="Ccm-8r-Aga" secondAttribute="bottom" id="3QR-k1-ttN"/>
+                <constraint firstItem="Rvj-ed-P94" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9xZ-Zg-nmx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rvj-ed-P94" secondAttribute="trailing" constant="20" id="EtG-yv-Dxs"/>
+                <constraint firstItem="Ccm-8r-Aga" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="KYK-ok-2B2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fgq-jQ-c3h" secondAttribute="trailing" constant="20" id="NGW-Bh-pwz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Rvj-ed-P94" secondAttribute="bottom" id="eMS-On-mwa"/>
+                <constraint firstItem="fgq-jQ-c3h" firstAttribute="centerY" secondItem="Ccm-8r-Aga" secondAttribute="centerY" id="j3c-dJ-DdX"/>
+                <constraint firstItem="Ccm-8r-Aga" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jmD-Vy-M6c"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ccm-8r-Aga" secondAttribute="trailing" id="wqM-yt-CPk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeBtn" width="25" height="25"/>
+    </resources>
+</document>

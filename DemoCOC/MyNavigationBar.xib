@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyNavigationBar" customModule="DemoCOC" customModuleProvider="target">
+            <connections>
+                <outlet property="contView" destination="iN0-l3-epB" id="BRq-WS-jIT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJi-c9-Jaw" userLabel="Shadow View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K7L-wi-gxa">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jm-tU-cgk">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <color key="backgroundColor" red="0.99215686270000003" green="0.79607843140000001" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="自訂navigation bar"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="2Jm-tU-cgk" secondAttribute="bottom" id="5w3-jx-JfN"/>
+                                <constraint firstAttribute="trailing" secondItem="2Jm-tU-cgk" secondAttribute="trailing" id="M2Y-Tk-dP0"/>
+                                <constraint firstItem="2Jm-tU-cgk" firstAttribute="top" secondItem="K7L-wi-gxa" secondAttribute="top" id="wIm-9p-NEZ"/>
+                                <constraint firstItem="2Jm-tU-cgk" firstAttribute="leading" secondItem="K7L-wi-gxa" secondAttribute="leading" id="wmt-Ue-rgm"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="K7L-wi-gxa" secondAttribute="trailing" id="Gym-db-51l"/>
+                        <constraint firstAttribute="bottom" secondItem="K7L-wi-gxa" secondAttribute="bottom" id="b5c-Ww-EmZ"/>
+                        <constraint firstItem="K7L-wi-gxa" firstAttribute="top" secondItem="gJi-c9-Jaw" secondAttribute="top" id="bsb-fX-ppn"/>
+                        <constraint firstItem="K7L-wi-gxa" firstAttribute="leading" secondItem="gJi-c9-Jaw" secondAttribute="leading" id="zq3-t1-Dzt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gJi-c9-Jaw" secondAttribute="trailing" id="2O6-6Y-JFK"/>
+                <constraint firstAttribute="bottom" secondItem="gJi-c9-Jaw" secondAttribute="bottom" id="LKV-41-lVu"/>
+                <constraint firstItem="gJi-c9-Jaw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tKi-24-aqB"/>
+                <constraint firstItem="gJi-c9-Jaw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zO6-Gv-F8N"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="127.90178571428571"/>
+        </view>
+    </objects>
+</document>
