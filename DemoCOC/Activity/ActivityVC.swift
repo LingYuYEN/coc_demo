@@ -305,7 +305,7 @@ extension ActivityVC: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 10 * screen.height / 736,
+        return UIEdgeInsets(top: 6 * screen.height / 736,
                             left: 20 * screen.width / 414,
                             bottom: 10 * screen.height / 736,
                             right: 20 * screen.width / 414)

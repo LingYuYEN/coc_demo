@@ -35,7 +35,7 @@ class NaviTitleView: UIView {
         contView = nib.instantiate(withOwner: self, options: nil).first as? UIView
         contView.frame = bounds
         naviTitleBtn.setAttributedTitle(.setKernAttriStr(string: "全台需求", kern: 5), for: .normal)
-//        naviTitleBtn.setAttributedTitle(.setNaviTitleAttriStr(string: "全台需求"), for: .normal)
+//        naviTitleBtn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 5 * 0.5, bottom: 0, right: 0)
         self.addSubview(contView)
     }
     

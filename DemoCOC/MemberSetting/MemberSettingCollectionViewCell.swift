@@ -34,6 +34,7 @@ class MemberSettingCollectionViewCell: UICollectionViewCell {
         self.contentView.layer.applySketchShadow(color: .black, alpha: 0.1, x: 0, y: 0.7, blur: 13, spread: 0)
         contView.layer.cornerRadius = 13.3 * screen.width / 414
         memoBtn.layer.cornerRadius = memoBtn.frame.height / 2
+//        memoBtn.layer.masksToBounds = true
     }
 
 }

@@ -10,7 +10,6 @@ import UIKit
 import Hero
 
 class HomeVC: UIViewController {
-    
     let names = ["尋求新事業合作商", "整體品牌規劃需求", "尋求新事業合作商", "整體品牌規劃需求",
                  "尋求新事業合作商", "整體品牌規劃需求", "尋求新事業合作商", "整體品牌規劃需求",
                  "尋求新事業合作商", "整體品牌規劃需求", "尋求新事業合作商", "整體品牌規劃需求",
@@ -340,7 +339,7 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 10 * screen.height / 736,
+        return UIEdgeInsets(top: 6 * screen.height / 736,
                             left: 20 * screen.width / 414,
                             bottom: 10 * screen.height / 736,
                             right: 20 * screen.width / 414)

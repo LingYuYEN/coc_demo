@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import QuartzCore
 
 class DetailView: UIView {
     
@@ -53,7 +54,7 @@ class DetailView: UIView {
         contView = nib.instantiate(withOwner: self, options: nil).first as? UIView
         contView.frame = bounds
         memoBtn.layer.cornerRadius = self.memoBtn.frame.height / 2
-        
+        memoBtn.layer.masksToBounds = true
         self.addSubview(contView)
     }
     

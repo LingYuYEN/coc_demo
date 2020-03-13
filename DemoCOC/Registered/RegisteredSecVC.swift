@@ -75,12 +75,6 @@ class RegisteredSecVC: UIViewController {
         
         titleLabel.attributedText = attributedStr
         
-        
-        //        titleLabel.attributedText = .setAttributedString(string: isRegister ? "請輸入手機號碼註冊" : "請輸入手機號碼登入",
-        //                                                         wordSpace: 3.97,
-        //                                                         textColor: .set(red: 210, green: 209, blue: 218))
-        
-        
         areaCodeTextField.attributedText = .setAttributedString(string: "+ 886",
                                                                 wordSpace: 2.33,
                                                                 textColor: .set(red: 14, green: 5, blue: 55))

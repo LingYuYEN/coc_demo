@@ -89,7 +89,7 @@
                             </connections>
                         </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="zjb-R7-4Gs" userLabel="Navi Titie View" customClass="NaviTitleView" customModule="COC" customModuleProvider="target">
-                            <rect key="frame" x="144.66666666666666" y="0.0" width="124.99999999999997" height="44"/>
+                            <rect key="frame" x="132" y="0.0" width="150" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </view>
@@ -214,7 +214,7 @@
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="Tar-ga-TTC" userLabel="Navi Titie View" customClass="NaviTitleView" customModule="COC" customModuleProvider="target">
-                            <rect key="frame" x="144.66666666666666" y="0.0" width="124.99999999999997" height="44"/>
+                            <rect key="frame" x="132" y="0.0" width="150" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </view>
@@ -491,7 +491,7 @@
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="XUx-Rh-xt3" userLabel="Navi Titie View" customClass="NaviTitleView" customModule="COC" customModuleProvider="target">
-                            <rect key="frame" x="144.66666666666666" y="0.0" width="124.99999999999997" height="44"/>
+                            <rect key="frame" x="132" y="0.0" width="150" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </view>

@@ -17,7 +17,17 @@ class RegisteredVC: UIViewController {
     @IBOutlet var loginBtn: UIButton!
     @IBOutlet var noteTextView: UITextView!
     @IBOutlet var registerLogoImageView: UIImageView!
-
+    @IBOutlet var originalBtn: UIButton! {
+        didSet {
+            self.originalBtn.layer.cornerRadius = self.originalBtn.frame.height / 2
+        }
+    }
+    @IBOutlet var newBtn: UIButton! {
+           didSet {
+               self.newBtn.layer.cornerRadius = self.newBtn.frame.height / 2
+           }
+       }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
